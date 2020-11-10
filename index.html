@@ -1,1 +1,77 @@
-coming soon
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-867ETCLPJJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-867ETCLPJJ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zen hew</title>
+    <link rel="stylesheet" href="./stylesheets/home-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <a class="menu-icon" id="menu-icon" onclick="openMenu()">
+        <span>menu</span>
+        <span id="menu-bar"></span>
+        <span id="menu-bar"></span>
+    </a> 
+    <a href="index.html" id="logo">zen hew</a>
+    <nav class="menu-slide" id="menu">
+        <a href="" class="close-icon" onclick="closeMenu()">
+            <span class="animated"></span>
+            <span class="animated"></span>
+        </a>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <span class="contact">
+                Contact me:</> <br>
+                <a href="mailto:zenhew@yahoo.com">zenhew@yahoo.com</a>
+            </span>
+        </ul>
+
+    </nav> 
+    <section>
+        <div class="landing">
+            <div class="intro">
+                Design solutions that delight humans and meet business goals on digital products            
+            </div>
+            <div class="browse">
+                <p>Browse Project</p> 
+                <p id="tiny">Scroll left</p> 
+            </div>
+        </div>
+        <div class="case-study-1">
+            <div class="img">
+                <img src="img/homecrowd/cs1-cover.png" alt="" width="700px">
+            </div>
+            <div class="cs1-cta">
+                <p>Loan Application Made Easy</p>
+                <a href="project/loan-application-made-easy.html" id="cta"><button>View Project</button></a>
+            </div>
+        </div>
+        <div class="coming-soon">
+            <p>More coming soon</p>
+        </div>
+    </section>
+
+<script type="text/javascript">
+    function openMenu() {
+        menuOpened();
+    }
+    function menuOpened() {
+        document.getElementById('menu-icon').style = "display: none";
+        document.getElementById('menu').style = "display: block";
+    }
+    function closeMenu() {
+        document.getElementsByClassName('menu').style = "display: none"
+    }
+</script>
+ 
+
+</body>
+</html>
