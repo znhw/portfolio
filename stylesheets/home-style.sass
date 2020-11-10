@@ -1,0 +1,111 @@
+@import global
+
+html, body
+    margin: 0
+    padding: 0
+    overflow-y: hidden
+    font-family: $zhfont
+
+a 
+    text-decoration: none 
+
+$hcbg: #FFDF74
+
+section 
+    width: 300%
+    display: flex 
+    flex-direction: row 
+    overflow-x: auto
+
+.coming-soon 
+    width: 100%
+    text-align: center
+    margin: auto
+
+.landing
+    width: 100%
+    height: 100vh 
+    display: flex 
+    flex-direction: column
+    justify-content: center
+    overflow-y: hidden
+    .intro
+        font-size: 50px
+        max-width: 88%
+        background-color: white
+        white-space: normal
+        margin-top: 200px
+        margin-left: 45px
+        color: #c3cfe2
+        color: #434343
+        span 
+            font-size: 55px
+            color: #868f96
+    .browse 
+        margin-left: 45px
+        font-size: 28px
+        line-height: 5px
+        margin-top: 90px
+        position: relative
+
+.case-study-1
+    width: 100%
+    height: 100vh 
+    background-color: $hcbg
+    position: relative
+    overflow: hidden
+    border: white solid 20px
+    box-sizing: border-box
+    box-shadow: inset 10px 0px 0px 10px white
+    img 
+        position: relative
+        top: 120px
+        left: 5%
+
+.cs1-cta 
+    background: white
+    border-radius: 50%
+    width: 400px
+    height: 400px
+    right: -20px
+    bottom: -60px
+    position: absolute
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    box-shadow: -20px 3px 46px -23px rgba(0,0,0,0.75) 
+    font-family: $contentfont
+    p 
+        font-size: 42px
+    p, #cta 
+        position: relative
+        margin-left: 50px
+        top: 8%  
+          
+.error
+    width: 100%
+    height: 100vh
+    overflow-x: hidden
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+@media screen and ( max-width: 750px )
+    .cs1-cta 
+        width: 270px
+        height: 270px
+        bottom: -10px
+        p 
+            font-size: 26px
+            padding-top: 10px    
+        button 
+            // font-size: 12px            
+
+@media screen and ( max-width: 420px )
+    .intro  
+        font-size: 28px !important
+    .browse
+        font-size: 19px 
+    #tiny 
+        font-size: 15px    

@@ -1,0 +1,369 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  overflow-x: none;
+}
+
+#logo, #menu-icon, .landing, .menu-slide, #menu {
+  font-family: "Italiana", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  position: fixed;
+  left: 50px;
+  padding-top: 45px;
+  font-size: 28px;
+}
+
+#italic {
+  font-style: italic;
+}
+
+#tiny {
+  font-size: 21px;
+}
+
+.menu-icon {
+  right: 60px;
+  margin: 45px 45px 45px 0;
+  cursor: pointer;
+  letter-spacing: 3;
+  position: fixed;
+  z-index: 10;
+}
+
+#menu-bar {
+  display: block;
+  width: 47px;
+  height: 2px;
+  background: #333333;
+  position: absolute;
+  line-height: 2;
+}
+
+#menu-bar span:nth-child(3) {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+.menu-icon:hover span:nth-child(3) {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+.close-icon {
+  display: block;
+  float: right;
+  top: 60px;
+  right: 110px;
+  width: 47px;
+  height: 45px;
+  position: fixed;
+}
+
+.close-icon span {
+  width: 47px;
+  height: 2px;
+  background: #333333;
+  display: block;
+}
+
+.close-icon span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.close-icon span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.menu-slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: white;
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+.menu-slide ul {
+  top: 40%;
+  position: relative;
+  margin-right: auto;
+  margin-left: -20px;
+  text-align: center;
+}
+
+.menu-slide ul li {
+  list-style: none;
+  line-height: 60px;
+}
+
+.menu-slide p {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border-radius: 20px;
+  border: 1px solid #434343;
+  padding: 8px 27px;
+}
+
+@media screen and (max-width: 450px) {
+  .menu-icon {
+    right: 20px;
+    margin-right: 0px;
+  }
+  .close-icon {
+    right: 30px;
+  }
+}
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body h1, body h2, body h3 {
+  font-weight: 600;
+}
+
+body h2 {
+  font-size: 45px;
+}
+
+#logo, .menu-icon {
+  position: absolute;
+}
+
+.flex-row, .cover .cover-title, .project-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-column, .cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project {
+  padding: 30px 60px;
+  margin: auto;
+  width: 80%;
+}
+
+.project p, .project li {
+  font-weight: 100;
+  line-height: 30px;
+}
+
+.cover {
+  padding-top: 50px;
+  background-color: #FFDF74;
+  min-height: 80vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cover .cover-title {
+  width: 70%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+}
+
+.cover .cover-title span {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.project-info ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.project-info ul li {
+  margin: 20px;
+}
+
+.gallery {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.gallery img {
+  white-space: nowrap;
+}
+
+#center {
+  width: calc( 100% - 20%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paragraph-1 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.paragraph-1 p {
+  -webkit-columns: 2;
+          columns: 2;
+}
+
+.old-design {
+  background-color: #e6e6e6;
+  padding: 20px 40px;
+}
+
+.paragraph-2 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.paragraph-2 h2 {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.paragraph-3 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.paragraph-3 h2 {
+  width: 30%;
+}
+
+.paragraph-3 p {
+  width: 60%;
+  margin-top: 50px;
+}
+
+.paragraph-4 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.paragraph-4 li {
+  list-style: upper-alpha;
+  padding-bottom: 50px;
+}
+
+.paragraph-4 h2 {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.paragraph-4 img {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+footer {
+  font-family: "Italiana", serif;
+  float: right;
+  padding-right: 95px;
+  margin-bottom: 60px;
+  font-size: 16px;
+}
+
+.disclaimer {
+  font-size: 12px;
+  width: 90%;
+}
+
+.disclaimer p {
+  line-height: 21px;
+}
+
+@media screen and (max-width: 600px) {
+  .paragraph-1 p {
+    -webkit-columns: 1;
+            columns: 1;
+  }
+  .paragraph-3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .paragraph-3 h2, .paragraph-3 p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cover img {
+    width: 70%;
+  }
+  .project {
+    padding: 30px 20px;
+  }
+  .paragraph-2 h2, .paragraph-4 h2 {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=project-style.css.map */
