@@ -1,77 +1,104 @@
-<html lang="en">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-867ETCLPJJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-867ETCLPJJ');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zen hew</title>
-    <link rel="stylesheet" href="./stylesheets/home-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
-</head>
-<body id="body">
-    <a class="menu-icon" id="menu-icon" onclick="openMenu()">
-        <span>menu</span>
-        <span id="menu-bar"></span>
-        <span id="menu-bar"></span>
-    </a> 
-    <a href="index.html" id="logo">zen hew</a>
-    <nav class="menu-slide" id="menu">
-        <a href="" class="close-icon" onclick="closeMenu()">
-            <span class="animated"></span>
-            <span class="animated"></span>
-        </a>
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <span class="contact">
-                Contact me:</> <br>
-                <a href="mailto:zenhew@yahoo.com">zenhew@yahoo.com</a>
-            </span>
-        </ul>
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-867ETCLPJJ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-867ETCLPJJ');
+        </script> -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>zen hew</title>
+        <meta name="description" content="Founder of zeniadesign.com I design experiences and interfaces for digital products that solve business problems.">
+        <meta name="keywords" content="ux design, ui design, digital products, startups, user experience, ux talents, singapore, tech startups">
+        <link rel="stylesheet" href="./stylesheets/home-style.css">
+        <link rel="shortcut icon" type="image/jpg" href="162PerfectWhite.png"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Italiana&family=Tenor+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" id="logo">zen hew</a>
 
-    </nav> 
-    <section>
-        <div class="landing">
+            <a class="menu-icon" id="menu-icon" onclick="openMenu()">
+                <span>menu</span>
+                <span id="menu-bar"></span>
+                <span id="menu-bar"></span>
+            </a> 
+    
+        </header>
+        <nav class="menu-slide" id="menu">
+            <a href="" class="close-icon" onclick="closeMenu()">
+                <span class="animated"></span>
+                <span class="animated"></span>
+            </a>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <span class="contact">
+                    <a href="mailto:zenhew@yahoo.com">zenhew@yahoo.com</a>
+                </span>
+            </ul>
+        </nav> 
+        <section class="home">
             <div class="intro">
-                I design digital products that delight people and solve business problems.             
+                <span id="emoji">&#128075</span>
+                <div>
+                    <p>I am a <span id="fp-font">design</span> and <span id="fp-font">tech</span> entrepreneur. I enjoy helping clients solve business problems and develop opportunities on digital platforms by using the latest web technologies and design thinking methodologies. </p>
+                </div>
             </div>
-            <div class="browse">
-                <p>Browse Project</p> 
-                <p id="tiny">Scroll right</p> 
-            </div>
-        </div>
-        <div class="case-study-1">
-            <div class="img">
-                <img src="img/homecrowd/cs1-cover.png" alt="" width="700px">
-            </div>
-            <div class="cs1-cta">
-                <p>Loan Application Made Easy</p>
-                <a href="project/loan-application-made-easy.html" id="cta"><button>View Project</button></a>
-            </div>
-        </div>
-        <div class="coming-soon">
-            <p>More coming soon</p>
-        </div>
-    </section>
+            <div class="work"> 
+                <span id="emoji">&#128174 </span>
+                <h2>My creations:
+                    <p>(packed with great ideas & insights)</p>
+                </h2>
+    
+                <div class="project-item hc">
+                    <article>
+                        <img src="./images/zenia-design-hc-logo.png" alt="homecrowd logo designed by zeniadesign.com" width="180px">
+                        <p id="title">Loan Application Made Easy</p>
+                        <p>An application form designed to suit customer's needs and a loan process made to reduce disappointment.</p>
 
-<script type="text/javascript">
-    function openMenu() {
-        menuOpened();
-    }
-    function menuOpened() {
-        document.getElementById('menu-icon').style = "display: none";
-        document.getElementById('menu').style = "display: block";
-    }
-    function closeMenu() {
-        document.getElementsByClassName('menu').style = "display: none"
-    }
-</script>
- 
+                    </article>
+                    <button><a href="">View Project</a></button>
+                </div>
+                <div class="project-item ta">
+                    <article>
+                        <p id="title">Conversing with Anime Characters</p>
+                        <!-- <p>Lorem ipsum</p> -->
+                    </article>
+                    <button id="comingsoon">Coming Soon</button>
+                </div>
+            </div>
+            
+        </section>
+        <hr>
+            <section class="connect">
+                <span id="emoji">&#127759</span>
+                <h2>Let's get connected:</h2>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/zen-hew"><img src="./images/linkedin-logo.png" alt="link to zen hew's linkedin page" width="35px"></a>
+                    <a href="https://zenhew.medium.com"><img src="./images/medium-logo.png" alt="link to zen hew's medium page" width="60px"></a>
+                </div>
+            </section>
+       
 
-</body>
+       
+    </body>
+    <footer>
+        &copy; 2021. 
+    </footer>
+    <script type="text/javascript">
+        function openMenu() {
+            menuOpened();
+        }
+        function menuOpened() {
+            document.getElementById('menu-icon').style = "display: none";
+            document.getElementById('menu').style = "display: block";
+        }
+        function closeMenu() {
+            document.getElementsByClassName('menu').style = "display: none"
+        }
+    </script>
 </html>
